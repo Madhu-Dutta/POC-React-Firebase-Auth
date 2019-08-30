@@ -1,13 +1,77 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.form_block{
+  width: 400px;
+  display: table;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(0,0,0,0.1);
+  padding: 5px;
+  border-radius: 5px;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.form_block > #title{
+  background: #44cbdd;
+  padding: 10px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  text-shadow: -1px -1px 0 rgba(0,0,0,0.2);
+}
+.form_block > body{
+  background: #ffffff;
+  padding: 10px;
+  display: table;
+}
+input[type="text"],input[type="password"]{
+  height: 35px;
+  width: 100%;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  padding: 4px 5px;
+  background: #fff;
+  border: 1px solid #d0d0d0d0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.loginBtn{
+  height: 35px;
+  box-sizing: border-box;
+  padding: 4px 10px;
+  background: #f5f4ea;
+  border: 1px solid #d0d0d0d0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.logisignnBtn:hover{
+  background: #c3c3ba;
+}
+.signupBtn{
+  float: right;
+  background: #4bbda6;
+  color: #fff;
+  height: 35px;
+  box-sizing: border-box;
+  padding: 4px 10px;
+  border: 1px solid #d0d0d0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: -35px;
+}
+.signupBtn:hover{
+  background: #2d6358;
+}
+.Error{
+  padding: 10px;
+  background-color: #feeaea;
+  border: 1px solid #fadadb;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  color: red;
 }
