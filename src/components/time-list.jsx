@@ -39,9 +39,10 @@ const TimeList = () => {
 
 return(
     <div>
-        <h2>TODO Time List</h2>
+        <h2>Todo List</h2>
     <label>Sort by: </label>{' '}
         <select value={sortBy} onChange={e => setSortBy(e.currentTarget.value)}>
+           
             <option value="TIME_ASC">Time (fastest first)</option>
             <option value="TIME_DESC">Time (slowest first)</option>
             <option disabled>--------</option>
@@ -53,7 +54,7 @@ return(
                <li key={time.id}>
                     <div className="time-entry">
                         {time.title}
-                        <code className="time"> {time.times} seconds</code>
+                        <code className="time"> : {time.times} seconnds</code>
                     </div>
                 </li> 
             )}    

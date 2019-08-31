@@ -81,7 +81,20 @@ input[type="text"],input[type="password"]{
   cursor: pointer;
   /* margin-top: -35px; */
 }
-.logoutBtn:hover{
+.addTask{
+  background: #4bbda6;
+  color: #fff;
+  height: 35px;
+  box-sizing: border-box;
+  padding: 4px 10px;
+  border: 1px solid #d0d0d0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  cursor: pointer;
+  /* margin-top: -35px; */
+}
+.logoutBtn:hover, .addTask:hover{
   background: #2d6358;
 }
 .Error{
