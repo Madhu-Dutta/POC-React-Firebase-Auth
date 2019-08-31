@@ -1,7 +1,8 @@
 import firebase from 'firebase';
+import 'firebase/firebase-firestore';
 
   // Your web app's Firebase configuration
-  var firebaseConfig = {
+  export var firebaseConfig = {
     apiKey: "AIzaSyBSa2inwr4Aei-_nK98leysjMcTPyK5R74",
     authDomain: "auth-app-bba76.firebaseapp.com",
     databaseURL: "https://auth-app-bba76.firebaseio.com",
@@ -11,5 +12,6 @@ import firebase from 'firebase';
     appId: "1:249969616095:web:956de655873157f8"
   };
   // Initialize Firebase
-  const fire = firebase.initializeApp(firebaseConfig);
-  export default fire;
+  firebase.initializeApp(firebaseConfig);
+
+  export default firebase;

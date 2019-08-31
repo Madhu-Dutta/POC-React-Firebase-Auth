@@ -67,6 +67,23 @@ input[type="text"],input[type="password"]{
 .signupBtn:hover{
   background: #2d6358;
 }
+.logoutBtn{
+  float: right;
+  background: #4bbda6;
+  color: #fff;
+  height: 35px;
+  box-sizing: border-box;
+  padding: 4px 10px;
+  border: 1px solid #d0d0d0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  cursor: pointer;
+  /* margin-top: -35px; */
+}
+.logoutBtn:hover{
+  background: #2d6358;
+}
 .Error{
   padding: 10px;
   background-color: #feeaea;
@@ -74,4 +91,95 @@ input[type="text"],input[type="password"]{
   margin-bottom: 10px;
   border-radius: 3px;
   color: red;
+}
+html{
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  min-height:100%;
+  background: 
+  linear-gradient(-45deg, rgba(0,0,0,0.3), rgba(80, 1, 61, 0.8));
+  background-attachment: fixed;
+  background-size: cover; 
+}
+
+* {
+  /* height: 100%; */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.notesWrapper {
+  text-align: center;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  height: 100%;
+}
+
+.notesHeader {
+  display: flex;
+  flex: 1 1 5%;
+  font-size: 3.2em;
+  color: #F4B350;
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  align-content: center;
+  padding:20px 0px 20px 0px;
+  margin-bottom: 6px;
+  background-color: rgba(0,0,0,0.5);
+  text-shadow: 3px 3px 10px #000;
+  display: block;
+}
+.notesBody {
+  padding-top: 24px;
+  margin: 2rem;
+  display: flex;
+  flex: 1 1 85%;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  overflow: auto;
+}
+.App{
+  color: white; 
+  font-size: 20px;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: .5rem;
+  padding-bottom: 8rem;
+  border-radius: 4px;
+}
+form{
+  padding: 20px;
+  margin: 20px;
+}
+h1{
+  margin: 0;
+}
+/* .time-entry{
+  display: flex; justify-content: space-between; width: 50%;
+} */
+h2{
+  padding-bottom: 4%;
+}
+label{
+  padding-bottom: 4%;
+}
+.time{
+  color: #1fdf95;
+}
+
+form h4{
+  margin: 0 0 1rem;
+}
+form div{
+  margin-bottom: 0.5rem;
+}
+form label{
+  display: block;
 }
